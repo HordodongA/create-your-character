@@ -2,11 +2,23 @@
 
 //page fill with JS
 var siteContainer = document.querySelector("#Main-frame");
-console.log(siteContainer)
 var createCharButton = document.querySelector("button")
 
-function startGenerate() {
+const sleep = (ms) => new Promise((resolve, reject) => setTimeout(() => resolve(), ms))
+
+async function startGenerate() {
     createCharButton.style.display = "none";
+    // siteContainer.innerHTML = "<h1>Loading...</h1>"   // EZ egy szöveges, egyszerű loading mask
+
+    // ANIMATED LOADIN MASK, working with CSS
+    siteContainer.innerHTML = `
+        <div class="loader-container">
+        <div class="spinner"></div>
+        </div>
+    `
+
+    await sleep(2000)    // Hogy látsszon egy ideig a loading mask
+
     var siteContent = `
     <div id="Title-section">
     <img src="content/Dungeons-and-Dragons-Logo_PNG1.png" alt="D 'n' D logo">

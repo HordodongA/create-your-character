@@ -18,7 +18,7 @@ button {
     font-weight: bold;
     font-size: 4em;
     padding: 2%;
-    
+
     background-color: red;
     border-radius: 10px;
     border: solid 3px black;
@@ -81,7 +81,9 @@ button {
     font-weight: bold;
 }
 
-#Form input, select, textarea {
+#Form input,
+select,
+textarea {
     padding: 0.7% 2%;
     font-size: 1.1em;
     border-radius: 4px;
@@ -159,3 +161,55 @@ button {
     background-position: center;
     flex: 0 0 40%;
 }
+
+
+/* ! LOADING section */
+/* HTML:
+<div class="loader-container">
+<div class="spinner"></div>
+</div> */
+
+/* * WITH GIF - Commant 4 lines in bottom in this selector and not need .spinner and keyframes!!! */
+/* .loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background: #000
+    url("https://media.giphy.com/media/8agqybiK5LW8qrG3vJ/giphy.gif") center
+    no-repeat;
+} */
+/* * END OF WITH GIF - Commant 4 lines in bottom in this selector and not need .spinner and keyframes!!! */
+
+
+/* ? LOADIN WITH SPINNER DIV instead a gif. Works with .spinner and @keyframes */
+.loader-container {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.5s linear infinite;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* ? END OF LOADIN WITH SPINNER DIV instead a gif. Works with .spinner and @keyframes */
