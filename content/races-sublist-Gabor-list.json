@@ -1,0 +1,47 @@
+{
+	"fileType": "races-sublist",
+	"siteVersion": "1.167.7",
+	"name": "Gabor's list",
+	"saveId": "8fdcacfa-1cc0-40eb-82dd-88749bec1d9a",
+	"items": [
+		{
+			"h": "dragonborn_phb"
+		},
+		{
+			"h": "dwarf%20(hill)_phb"
+		},
+		{
+			"h": "dwarf%20(mountain)_phb"
+		},
+		{
+			"h": "elf%20(high)_phb"
+		},
+		{
+			"h": "elf%20(wood)_phb"
+		},
+		{
+			"h": "gnome%20(forest)_phb"
+		},
+		{
+			"h": "gnome%20(rock)_phb"
+		},
+		{
+			"h": "half-elf_phb"
+		},
+		{
+			"h": "halfling%20(lightfoot)_phb"
+		},
+		{
+			"h": "halfling%20(stout)_phb"
+		},
+		{
+			"h": "human_phb"
+		},
+		{
+			"h": "tiefling_phb"
+		}
+	],
+	"sources": [
+		"PHB"
+	]
+}
